@@ -1,0 +1,18 @@
+body{background-color: rgb(19, 23, 27);display:flex;
+flex-direction: column;justify-content: center;align-items: center;}
+.foto{
+width:20vw;height: 40vh;border: 8px groove black;
+background-size: cover;background-repeat: no-repeat;
+background-position: 45% ;}
+video{
+    width:20vw;
+    height: 40vh;
+}
+
+
+.nome{color:white; font-size:13pt;margin-top: 40px;}
+
+
+@media (max-width:786px){
+    .foto{width: 140px; height: 160px;}
+}

@@ -1,0 +1,353 @@
+body{margin:0;
+top:0;text-rendering: optimizeLegibility;max-width: 100%;}
+
+.suca{width: 100%;color:white;
+    background-color: rgb(100, 0, 0);height: fit-content;
+    cursor: pointer;
+font-family: 'Harlow Solid Semi Expanded Italic','Times New Roman', 'Sans-Serif';top:0;position:sticky;}
+
+.warning{
+position: absolute;
+background-color: red;
+color: white;
+opacity: 0.8;
+height: 100vh;
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 10;
+font-size: 50pt;
+}
+
+header{
+    text-align:right;
+    background-image: linear-gradient(90deg,white, #FE6604);
+    width: 100%; height: 13vh;
+    font-family: cursive;
+    transition: all 2s;
+    display:flex;
+    align-items: center;
+}
+#logo{
+    height:21.25vh;
+    width: 17vw;
+    border-radius: 50%;
+}
+#bandeira{
+    background-color: green;
+    width: 13vw;
+    height: 13pt;
+}
+#bandeira>div{
+    background-color: red;
+    width: 50%;
+    height: 12pt;
+}
+.header_image_holder{
+    height: 13vh;
+    width: 25%;
+position: absolute;
+opacity: 0.5;
+left: 75%;
+}
+#header_image{
+    height: 13vh;
+    width: 100%;
+    margin:0px;
+
+}
+.instituto{
+    margin-left: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 20pt;
+    height: 0px;
+    Color: black;
+    font-family:'Times New Roman', serif;
+}
+
+h2{padding: 10px;font-size: 11pt;text-decoration: underline;
+color:black;    
+font-family:'Times New Roman', serif;
+
+transition: all 2s ease;
+}
+
+p{height: 0px;width: fit-content;}
+
+.exp{background-image: linear-gradient(270deg,rgb(29, 104, 165),black);width: 100%;height: fit-content;
+z-index:-1;
+display: flex;
+align-items: center;
+justify-content: center;}
+
+.explicacao{text-align: center;width: 100%;height: 2vh;background-color: rgb(177,29,45);
+color: white;font-size: 13px;
+z-index: 1;
+opacity: 40%;
+display: flex;
+align-items: center;
+justify-content: center;}
+
+
+
+.explicacao {opacity: 100%;color:white;text-shadow: 3px;
+}
+
+input{width: 4vw;}
+
+main{display:flex;background-color: #DEDEDE;width: 100%;height: 85vh;
+flex-direction: row;
+font-size: 1.5vw;flex-wrap:wrap;font-family: 'Palatino Linotype', 'Times New Roman', Times, serif;}
+
+
+select{width: fit-content;height: fit-content;}
+
+#divisoes{width: 30px; font-size: 12pt;}
+
+.linha{background-color: black;
+width: 20%;height: 3px;}
+.linha::after  {background-color: white;
+    width: 100%;height: 3px;} 
+
+#resposta{font-size: 13pt; color:rgb(255, 255, 255);
+text-shadow: 3px;
+text-decoration: underline;}
+
+button{width: 20px;height: 20px;
+background-color:whitesmoke;text-align: center;display: flex; align-items: center; justify-content: center;
+font-size: 15px;}
+
+.numbstag{display:flex;flex-flow:row;
+    flex-direction: row;
+    align-items: center; justify-content: flex-start;
+margin: 0.4vh;
+font-size:1vw;
+}
+
+
+.count1{background-color:white;width:50px;height: 50px;}
+
+#size{display: flex;flex-direction: column;flex-flow: column;flex-wrap: wrap;
+min-width: 40vw;max-height: 70vh;
+margin-left: 5px;
+border-style: dotted;border-width: 2px;
+border-color: white;overflow-x: scroll;
+}
+
+
+#Especifico{width: 45px;}
+
+
+#result{width: 100vw;height: 6vh;
+margin-bottom: 0vh;margin-top: 2vh;
+font-family: 'Palatino Linotype';
+background-color:rgb(177,29,45);
+color:white}
+
+#resultados{width:70vw;height: 80vh;overflow-y:scroll;
+background-color: rgb(19, 23, 27); z-index: 4;display:flex;
+transform:scale3d(0%,0%,0%);background-position: 50% 50%;
+position: absolute;
+box-shadow: 10px 20px 5px 500px rgba(0, 0, 0, 0.5) ;
+transition: 2s ;
+flex-direction:row;flex-wrap: wrap;flex-basis: content;
+align-items: center;justify-content: center;
+}
+#resultados::-webkit-scrollbar{width: 3px;background-color: black;}
+#resltados::-webkit-scrollbar-thumb{
+    background-color:whitesmoke;
+}
+
+.wrap{
+top:0;
+left:0;
+position: fixed;
+transform: scale3d(0%,0%,0%);align-items: center; justify-content: center;
+width: 100%;
+height: 100%;
+display: flex;
+transition: 1s;
+}
+
+#numbs{width:0%;
+height:0%;font-size: 12pt;font-weight: 600;display:flex;
+transform: scale(0%);
+opacity:0%;
+transition:1s;
+flex-direction: column;flex-wrap: wrap;
+margin-left: 5%;
+background-color: rgba(32, 40, 45,0.1);
+color:white;}
+
+#showcase{color:black;
+width: fit-content;
+height: 16pt;cursor: pointer;
+margin: 10px;
+margin-top: 0%;
+font-weight: 300;
+font-size:16pt;}
+
+#normawrap{width: 25vw;display: flex;
+flex-wrap: wrap;
+height: 75vh; 
+margin-bottom: 2vh;
+margin-left: 2vh;
+
+}
+#type{
+    color:black;
+    font-weight: 300;margin:0%;  font-size:16pt; 
+}
+
+#informacoes{overflow: scroll;width: 20vw;
+background-color:rgba(22, 29, 34, 0.001);color:white;
+height: 60vh;margin-left: 0.5vw;
+transform: scale3d(0%,0%,0%);
+font-size: 14pt;
+transition: 2s;
+}
+#informacoes::-webkit-scrollbar{width: 4px;
+background-color: whitesmoke;height: 4px;
+}
+#informacoes::-webkit-scrollbar-thumb{
+    background-color: rgb(32, 40, 45)}
+
+
+
+#divwrap{
+width: 25vw; display:flex;flex-wrap: wrap;
+height: 75vh;
+margin-bottom:2vh;
+margin-left: 2vh;
+
+}
+
+#metros{width: 45vw; display:flex;flex-wrap: wrap;
+    flex-direction: column;
+    height: 75vh;
+    margin-bottom:2vh;
+    margin-left: 2vh;
+font-size: 12pt;
+}
+#size::-webkit-scrollbar{width: 4px;
+    background-color: whitesmoke;height: 4px;}
+#size::-webkit-scrollbar-thumb{
+    background-color: rgb(32, 40, 45)}    
+
+#madoda{
+/*transform: translateX(50%);*/
+margin-top: 0%;font-size:16pt;
+color:black;
+font-weight: 300; width:100%;
+}
+
+.Todosquartos{max-height: 70vh;
+width: fit-content;display: flex;}
+
+.Todas_salas{max-height: 70vh;
+    width: fit-content;display: flex}
+
+.Todascozinhas{max-height: 70vh;
+    width: fit-content;display: flex}
+
+.Todaswc{max-height: 70vh;
+    width: fit-content;display: flex}
+.Todasvarandas{max-height: 70vh;
+    width: fit-content;display: flex}
+
+.Todascopas{max-height: 70vh;
+    width: fit-content;display: flex}
+
+.Todosservice{max-height: 70vh;
+    width: fit-content;display: flex}
+
+.Todaslavandeiras{max-height: 70vh;
+    width: fit-content;display: flex}
+
+.Todoscorredores{max-height: 70vh;
+    width: fit-content;display: flex}
+
+.Todasentradas{max-height: 70vh;
+    width: fit-content;display: flex}
+
+.Todasexternas{max-height: 70vh;
+    width: fit-content;display: flex}
+
+.Todosoutros{max-height: 70vh;
+    width: fit-content;display: flex}
+
+.Todasplugs{max-height: 70vh;
+    width: fit-content;display: flex}
+.caixas{width: 24%;display: flex;flex-direction: column;
+height: 15vh;background-color: black;color:white;
+font-size: 14pt;outline-color: blanchedalmond;
+margin:2px;
+transition: 2s;}
+
+.patrao{ background-color: rgb(21, 109, 80);
+color:white;text-shadow: 1px 1px 1px 1px black;
+display:flex; flex-direction: column;
+height: 12vh;width: 100%;
+font-size: 14pt;text-shadow: 1.5px 1.5px 1.5px black;}
+
+.patrao p{margin:10px;}
+
+
+
+.Kanye{background-color:rgb(153, 2, 2);color:white;
+font-size: 16pt;width: 100%;height: fit-content;
+display: flex;align-items: center;justify-content: center;font-weight: 400;text-shadow: 2px 2px  2px black;
+}
+
+.demanda_PITUG{background-color: rgb(144, 112, 112);color:white;
+    font-size: 13pt;width: 100%;height: fit-content;
+    display: flex;align-items: center;justify-content: center;font-weight: 400;text-shadow: 2px 2px  2px black;}
+
+.DME{background-color:rgb(32, 31, 23);color:white;
+font-size: 16pt;width: 100%;height: fit-content;
+display: flex;align-items: center;justify-content: center;font-weight: 400;text-shadow: 2px 2px  2px black;
+}
+
+.demanda_TT{background-color:rgb(36, 49, 34);color:rgb(166, 255, 0);
+    font-size: 16pt;width: 100%;height: fit-content;
+    display: flex;align-items: center;justify-content: center;font-weight: 400;text-shadow: 2px 2px  2px black;
+   text-rendering: optimizeLegibility; }
+
+.Kanye{background-color:rgb(153, 2, 2);color:white;
+    font-size: 16pt;width: 100%;height: fit-content;
+    display: flex;align-items: center;justify-content: center;font-weight: 400;text-shadow: 2px 2px  2px black;
+    }
+
+
+.rapper{background-color: rgb(177, 159, 0);color:white;
+font-size: 15pt;width: 100%;height: fit-content;
+display: flex;align-items: center;justify-content: center;font-weight: 400;text-shadow: 2px 2px  2px black; }
+
+footer{width:100%;height: fit-content;
+    background-color:rgb(19, 23, 27);
+color:white;margin: 0px;padding:0px;
+position:absolute;}
+a{text-decoration: none;background-color: black;color: white;}
+
+.iluminacao{border-width: 3px;
+border-color: black;border-style:dotted;}
+.specified tr{height: 5px;border-width: 3px;
+    border-color: black;border-style:dotted;}
+td, th{border: whitesmoke 3px ridge
+}
+td:hover{background-color: rgb(1, 61, 1);}
+th:hover{background-color: rgb(56, 2, 2);}
+
+h3:hover{background-color: rgb(1, 61, 1); color: white;}
+li:hover {background-color: rgb(1, 49, 1); color:white}
+h4:hover {background-color: rgb(56, 2, 2); color:white}
+
+.black_color{
+    color:black;
+}

@@ -1,0 +1,142 @@
+/*----------------------------*/
+button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.input_boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 130px;height: fit-content;
+    outline-width: 3px;
+    outline-color: black;
+    outline-style: groove;
+    transition: 1.5s ease;
+    border-radius:10px;
+}
+
+#quarto{background-color: rgb(79, 109, 126)};    
+
+#sala{background-color: rgb(33, 56, 83);};   
+
+#cozinha{background-color: rgb(14, 41, 48);}
+
+#wc{background-color:rgb(96, 255, 255);}
+
+#varanda{background-color:whitesmoke;}                      
+
+#outro{background-color:crimson;}
+
+#copa{background-color:blanchedalmond;}
+
+#service{
+background-color:azure;
+font-size: 10pt;
+}
+
+#washroom{background-color:cadetblue;}
+
+#hall{background-color:darksalmon;}
+
+#entrance{background-color:lemonchiffon;
+font-size: 10pt;}
+
+#externa{
+background-color:teal;
+font-size: 10pt;}
+
+#wattage{
+    background-color:olive;
+height: fit-content;
+}     
+
+#compr,.compr, .larg, .papito{width:50%}
+
+                            
+.TUE{width: fit-content;height: 5vh;
+display:flex;
+margin: 0.4vh;
+font-size:1vw;
+flex-direction: column;flex-wrap: wrap;}
+
+    /* --------media queries*/
+@media (max-width:1165px){
+    .caixas{height: 15vh;font-size:11pt;overflow:scroll;}
+    .caixas::-webkit-scrollbar{width: 1px;height: 1px;}
+    
+}
+
+/* 1100px*/
+@media (max-width:1100px){
+#informacoes{ font-size: 11pt;}
+header{text-align: center;background-color:white;}
+.input_boxes{flex-direction: column;width: 90px;height: 75px;font-size: 11pt;}
+
+     
+    .numbstag{width:1vw; height:1.2vh;}
+            
+    #numbs{overflow: scroll;
+    display:block;
+    overflow-wrap: break-word;}
+    }    
+ 
+@media (max-width:1045px){
+#size{float: left;display: flex;flex-direction: column;flex-flow: column;flex-wrap: wrap;
+    min-width: 40vw;max-height: 70vh;
+    margin-left: 5px;overflow: scroll;}
+#divwrap{float:right;}
+main{height: fit-content;}
+}    
+
+@media (max-width:768px){
+    #normawrap{width: 50%;} 
+#informacoes{width: 100%;}
+
+#numbs{width: 100%; height: 62.5vh;}
+#divwrap{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+main{height: fit-content;}
+}
+
+@media (max-width:616px){
+    header{height:100px;}
+    h1{font-size:17pt}
+    h2{font-size: 9pt;;}
+ #normawrap{width: 95%;margin: 0;}   
+#divwrap{width:80%;display: flex;flex-direction: column;align-items: center;margin: 0 ;}
+#size{width: 90%;overflow: scroll;}
+main{height:fit-content;flex-direction: column;
+    align-items: center;justify-self: center;}
+#result{width: 80vw;} 
+#madoda{height: 20px;width: 90vw;text-align: center;
+    background-position: center;font-size:12pt}
+    #madoda{width: 100%;}
+#metros{height: 70vh;width: 90%;display: flex;flex-direction: column;flex-flow: column;
+} 
+#resultados{width: 95%;height: 95%;}  
+input{width:15vw}
+.caixas{font-size:9pt}
+
+.demanda_TT, .rapper, .Kanye, .patrao, .DME,.demanda_PITUG {font-size:12pt;overflow: scroll;}
+}
+@media (max-width:424px){
+    .demanda_TT, .rapper, .Kanye, .patrao, .DME {font-size:11pt}
+    .demanda_PITUG{font-size:9pt}  
+    .header_image_holder{
+        z-index: 0;
+opacity: 0.3;
+    }
+    h1,h2,#logo{z-index:1;}
+    h1{font-size:12pt}
+    h2{font-size:8pt}
+    #logo{width: 20vw;border-radius: 50%;}
+    header{justify-content: center;}
+
+}
+    

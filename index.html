@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potência Total da Instalação (Norma Brasileira) </title>
+    <link rel="stylesheet" href="public/pi.css">
+    <link rel="stylesheet" href="public/pi_divisoes.css">
+    <script src="public/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header id="cabecalho"><img src="resources/elec.PNG" alt="IMEP" id="logo">
+         <div class="instituto"></div>
+         <div class="header_image_holder">
+            <a href='/'>
+            <img src="resources/header_image.png" alt="D-ELEC" id="header_image">
+            </a>
+            </div>
+    </header>
+    <div class="exp"><div id="nav" class="explicacao" style="font-size:8pt">
+        <p>Norma Brasileira</p> <div id="bandeira"><div></div></div>
+    </div>
+    </div>
+    <main id="corpo">
+    <div id="normawrap">
+       <p onclick="zerado()" id="type">Ajuda:</p> 
+        <select id="normass" onchange="getSelectOption()">
+            <option id="Portuguesa">Como usar</option>
+            <option id="NBR5410">Normas</option>
+        </select>
+        <div id="resposta"></div>
+        <div id="informacoes"> 
+        </div>
+    </div>
+    
+    <!--divwrap start-->
+    <div id="divwrap">
+    <div onclick="divisoes()" id="showcase"><button class="wide-button">Escolher as divisões da instalação</button></div>
+    
+    <div divisoes id="numbs" class="numbs">
+    Quartos:
+    <div class="numbstag" >
+        <button onclick="quartosremove()" id="Quartos-">-</button>    
+        <button onclick="Quartos()" id="Quartos+">+</button>
+    </div>
+    
+    Salas:
+    <div class="numbstag">       
+        <button onclick="salasremove()" id="Salas-">-</button> 
+        <button onclick="salas()" id="Salas+">+</button>
+    </div>
+    
+    Cozinhas:
+    <div class="numbstag">      
+        <button onclick="cozinharemove()" id="Cozinhas-">-</button>
+        <button onclick="cozinhas()" id="Cozinhas+">+</button>
+    </div>
+    
+    WC's:
+    <div class="numbstag">
+        <button onclick="wcremove()" id="WC-">-</button>    
+        <button onclick="banheiro()" id="WC+">+</button>
+    </div>
+    
+    Varandas:
+    <div class="numbstag">
+        <button onclick="varandaremove()" id="Varandas-">-</button>
+        <button onclick="varandas()" id="Varandas+">+</button>
+    </div>
+    
+    Copas:
+    <div class="numbstag">
+        <button onclick="copasremove()" id="Copas-">-</button>
+        <button onclick="copas()" id="Copas+">+</button>
+    </div>
+    
+    
+    Área de serviço:
+    <div class="numbstag">
+        <button onclick="serviceAremove()" id="servicea-">-</button>
+        <button onclick="serviceA()" id="servicea+">+</button>
+    </div>
+    
+    Lavandeiras:
+    <div class="numbstag">
+        <button onclick="lavandeiraremove()" id="lavandeiras-">-</button>
+        <button onclick="lavandeira()" id="lavandeiras+">+</button>
+    </div>
+    
+    Corredor:
+    <div class="numbstag">
+        <button onclick="corredorremove()" id="Corredor-">-</button>
+        <button onclick="corredor()" id="Corredor+">+</button>
+    </div>
+    
+    Hall de Entrada:
+    <div class="numbstag">
+        <button onclick="entranceremove()" id="Entrada-">-</button>
+        <button onclick="entrada()" id="Entrada+">+</button>
+    </div>
+    
+    Área Externa:
+    <div class="numbstag">
+        <button onclick="externalremove()" id="externa-">-</button>
+        <button onclick="external()" id="externa+">+</button>
+    </div>
+    
+    Outros:
+    <div class="numbstag">
+        <button onclick="outrosremove()" id="Outros-">-</button>
+        <button onclick="outros()" id="Outros+">+</button>
+    </div>
+    
+     TUE:
+    <div class="TUE">
+    
+    <button onclick="TUE()">+</button><button onclick="removetue()">-</button>
+    
+    </div>
+    Remover Todos
+    <button id="removeAll" class="wide-button">Remover</button>
+    
+    </div>
+    
+    </div>
+    <!---divwrap end-->
+    
+    <div id="metros"> 
+        <p id="madoda"> Dimensões de cada divisão (em metros):</p>      
+        <div id="size">
+    <div class="division-holders" id="Todosquartos"></div>
+    <div class="division-holders" id="Todas_salas"></div>
+    <div class="division-holders" id="Todascozinhas"></div>
+    <div class="division-holders" id="Todaswc"></div>
+    <div class="division-holders" id="Todasvarandas"></div>
+    <div class="division-holders" id="Todascopas"></div>
+    <div class="division-holders" id="Todosservice"></div>
+    <div class="division-holders" id="Todaslavandeiras"></div>
+    <div class="division-holders" id="Todoscorredores"></div>
+    <div class="division-holders" id="Todasentradas"></div>
+    <div class="division-holders" id="Todasexternas"></div>
+    <div class="division-holders" id="Todosoutros"></div>
+    <div class="division-holders" id="Todasplugs"></div>    
+            
+    </div>
+    </div> 
+    <div id="finale">   
+        <div><input type="submit" onclick="popup()" id="result" value="Resultados:" >
+    </div>
+        
+        </div>
+        
+    </main>
+    <div id="wrap"class="wrap">    
+        <div   id="resultados">
+    
+    
+     <!--- <button class="suca" onclick="removepopup()"> --> 
+        
+    </button>     
+    </div>          
+    </div>
+    
+    <footer id="rodape">
+        <p>Criado por </p>
+        <a href="/eu">Dário Aliky Mazuze</a>
+        <p><a href="/"> D-Elec - Serviços Elétricos </a></p>
+    </footer>  
+    
+    <script src="public/pi.js"></script>
+</body>
+</html>
